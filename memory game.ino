@@ -40,7 +40,7 @@ void loop() {
   switch (step) {
     case 0:
       lcd.setCursor(0, 0);
-      lcd.print("* Memory  Game *");
+      lcd.print("  Memory  Game  ");
       lcd.setCursor(1, 1);
       lcd.print("Move  Joystick");
 
@@ -56,7 +56,7 @@ void loop() {
       lcd.setCursor(7, 0);
       lcd.print(lvl);
       lcd.setCursor(0, 1);
-      lcd.print("  * Memorise *  ");
+      lcd.print("    Memorise    ");
       delay(500);
       lvlCombination[lvl] = randomLed;
       for (int i = 0; i <= lvl; i++) {
@@ -69,7 +69,7 @@ void loop() {
       break;
     case 2:
       lcd.setCursor(0, 1);
-      lcd.print("    * Play *    ");
+      lcd.print("      Play      ");
       for (int i = 0; i < 4; i++) {
         if (move_player() != 0) {
           combinationPlayed[lvl] = move_player();
